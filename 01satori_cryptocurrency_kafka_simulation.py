@@ -15,6 +15,9 @@ import sys,re
 import random
 import time, datetime
 
+simulate_feed   = True
+
+kafka_endpoint  = "dzaratsian1.field.hortonworks.com:6667"
 
 endpoint        = "wss://open-data.api.satori.com"
 appkey          = "APP_KEY"
@@ -26,7 +29,6 @@ def main():
     
     count = 0
     
-    kafka_endpoint = "dzaratsian1.field.hortonworks.com:6667"
     kafka_topic    = re.sub('[^a-zA-Z0-9]','_',channel)
     kafka_producer = kafka.KafkaProducer(bootstrap_servers=kafka_endpoint)
     

@@ -1,6 +1,6 @@
 {
   "queryType": "topN",
-  "dataSource": "cryptocurrency-market-data",
+  "dataSource": "cryptocurrency_market_data",
   "dimension": "cryptocurrency",
   "threshold": 5,
   "metric": "count",

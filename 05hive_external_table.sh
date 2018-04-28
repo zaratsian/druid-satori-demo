@@ -7,9 +7,8 @@ cat<<EOF>/tmp/create_table.sql
 SET hive.druid.broker.address.default=druid.example.com:8082;
 CREATE EXTERNAL TABLE if not exists cryptocurrency_market_data
 STORED BY 'org.apache.hadoop.hive.druid.DruidStorageHandler'
-TBLPROPERTIES ("druid.datasource" = "cryptocurrency-market-data");
+TBLPROPERTIES ("druid.datasource" = "cryptocurrency_market_data");
 EOF
 
-HS2=${1:-localhost:10500} #HIVE LLAP HOST:PORT
-BEELINE="beeline -u jdbc:hive2://$HS2/default"
+BEELINE="beeline -u jdbc:hive2://dzaratsian0.field.hortonworks.com:10500/default"
 $BEELINE -f /tmp/create_table.sql

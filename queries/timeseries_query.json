@@ -1,6 +1,6 @@
 {
   "queryType": "timeseries",
-  "dataSource": "cryptocurrency-market-data",
+  "dataSource": "cryptocurrency_market_data",
   "dimension": "cryptocurrency",
   "granularity": "FIFTEEN_MINUTE",
   "intervals": [ "2016-01-01/2020-12-31" ],

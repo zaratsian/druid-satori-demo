@@ -1,7 +1,7 @@
 {
   "type": "kafka",
   "dataSchema": {
-    "dataSource": "cryptocurrency-market-data",
+    "dataSource": "cryptocurrency_market_data",
     "parser": {
       "type": "string",
       "parseSpec": {
@@ -34,9 +34,9 @@
     "maxRowsPerSegment": 5000000
   },
   "ioConfig": {
-    "topic": "cryptocurrency-market-data",
+    "topic": "cryptocurrency_market_data",
     "consumerProperties": {
-      "bootstrap.servers": "druid.example.com:9092"
+      "bootstrap.servers": "druid.example.com:6667"
     },
     "taskCount": 1,
     "replicas": 1,

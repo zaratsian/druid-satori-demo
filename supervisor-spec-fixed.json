@@ -36,7 +36,7 @@
   "ioConfig": {
     "topic": "cryptocurrency_market_data",
     "consumerProperties": {
-      "bootstrap.servers": "druid.example.com:6667"
+      "bootstrap.servers": "kafka_host:6667"
     },
     "taskCount": 1,
     "replicas": 1,

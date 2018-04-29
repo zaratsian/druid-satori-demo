@@ -15,3 +15,12 @@ EOF
 
 BEELINE="beeline -u jdbc:hive2://dzaratsian0.field.hortonworks.com:10500/default"
 $BEELINE -f /tmp/create_table.sql
+
+
+#beeline -u jdbc:hive2://dzaratsian0.field.hortonworks.com:10500/default -e "select * from cryptocurrency_market_data limit 10";
+
+
+#beeline -u jdbc:hive2://dzaratsian0.field.hortonworks.com:10500/default -e "select cryptocurrency, count(*) as count from cryptocurrency_market_data group by cryptocurrency";
+
+
+#ZEND

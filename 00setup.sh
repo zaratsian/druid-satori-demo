@@ -14,14 +14,14 @@ export HIVE_LLAP_HOST=dzaratsian0.field.hortonworks.com:10500
 echo ""
 echo ""
 echo "Set the following env variables..."
-sleep 5
 echo ""
 echo "DRUID_USERNAME = " $DRUID_USERNAME
 echo "DRUID_PASSWORD = " $DRUID_PASSWORD
 echo "DRUID_BROKER = " $DRUID_BROKER
 echo "KAFKA_BROKER = " $KAFKA_BROKER
 echo "HIVE_LLAP_HOST = " $HIVE_LLAP_HOST
-
+echo ""
+sleep 5
 
 #########################################################################
 # Python Dependencies

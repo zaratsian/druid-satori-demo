@@ -8,7 +8,7 @@
 export DRUID_USERNAME=druid
 export DRUID_PASSWORD=horton.Mysql123
 export DRUID_BROKER=dzaratsian5.field.hortonworks.com:8082
-export KAFAK_BROKER=dzaratsian1.field.hortonworks.com:6667
+export KAFKA_BROKER=dzaratsian1.field.hortonworks.com:6667
 export HIVE_LLAP_HOST=dzaratsian0.field.hortonworks.com:10500
 
 echo ""
@@ -19,7 +19,7 @@ echo ""
 echo "DRUID_USERNAME = " $DRUID_USERNAME
 echo "DRUID_PASSWORD = " $DRUID_PASSWORD
 echo "DRUID_BROKER = " $DRUID_BROKER
-echo "KAFAK_BROKER = " $KAFAK_BROKER
+echo "KAFKA_BROKER = " $KAFKA_BROKER
 echo "HIVE_LLAP_HOST = " $HIVE_LLAP_HOST
 
 

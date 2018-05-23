@@ -23,9 +23,9 @@ appkey          = "APP_KEY"
 channel         = "cryptocurrency-market-data"
 
 
-# Get Kafka hostname:port from KAFAK_BROKER env var
+# Get Kafka hostname:port from KAFKA_BROKER env var
 try:
-    kafka_endpoint = os.environ['KAFAK_BROKER']
+    kafka_endpoint = os.environ['KAFKA_BROKER']
 except:
     kafka_endpoint = "dzaratsian1.field.hortonworks.com:6667"
 

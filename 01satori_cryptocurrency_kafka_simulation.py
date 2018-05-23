@@ -11,18 +11,27 @@
 
 import json
 import kafka
-import sys,re
+import os,sys,re
 import random
 import time, datetime
 
-simulate_feed   = True
 
-kafka_endpoint  = "dzaratsian1.field.hortonworks.com:6667"
+simulate_feed   = True
 
 endpoint        = "wss://open-data.api.satori.com"
 appkey          = "APP_KEY"
 channel         = "cryptocurrency-market-data"
-simulate_feed   = True
+
+
+# Get Kafka hostname:port from KAFAK_BROKER env var
+try:
+    kafka_endpoint = os.environ['KAFAK_BROKER']
+except:
+    kafka_endpoint = "dzaratsian1.field.hortonworks.com:6667"
+
+
+print('\n\n[ INFO ] Using Kafka host:port = ' + str(kafka_borker_port))
+time.sleep(3)
 
 
 def main():
